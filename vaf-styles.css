@@ -1,0 +1,122 @@
+/* VAF Business Solution - Opção 4 (Atlantic Style - Multitone Blue) Styles */
+
+/* Reset e Suavidade global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Efeito Glassmorphism Dinâmico */
+.glass-light {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: 0 4px 20px -5px rgba(148, 163, 184, 0.08);
+}
+
+.glass-light:hover {
+    border-color: rgba(37, 99, 235, 0.25);
+    box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.1);
+}
+
+.glass-dark {
+    background: rgba(14, 25, 47, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.08);
+}
+
+.glass-dark:hover {
+    border-color: rgba(96, 165, 250, 0.25);
+    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.15);
+}
+
+/* Scroll Reveal classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animações e Efeitos */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Sombras de Profundidade */
+.premium-shadow {
+    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+}
+
+.premium-shadow-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 60px -20px rgba(15, 23, 42, 0.15);
+}
+
+/* Gradientes específicos de seções */
+.bg-gradient-blue-dark {
+    background: linear-gradient(135deg, #0A192F 0%, #172A45 100%);
+}
+
+.bg-gradient-blue-light {
+    background: linear-gradient(135deg, #F0F7FF 0%, #E0F2FE 100%);
+}
+
+/* Custom Select, Input, Textarea */
+input, select, textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none !important;
+}
+
+/* Botões Customizados */
+.btn-primary-blue {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-blue:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary-blue {
+    background-color: transparent;
+    border: 1px solid rgba(37, 99, 235, 0.5);
+    color: #2563EB;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-blue:hover {
+    border-color: #2563EB;
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* Estilo do Seletor de Idiomas */
+.btn-lang {
+    transition: color 0.3s ease;
+}
+.btn-lang.active {
+    color: #2563EB;
+    font-weight: 700;
+}

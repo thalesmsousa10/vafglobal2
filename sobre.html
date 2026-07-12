@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre a VAF Business Solution. Conheça a nossa trajetória de 26 anos de inteligência corporativa liderada pela fundadora Lílian Janaína.">
+    
+    <title>Sobre Nós | VAF Business Solution (Opção 4)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vaf-dark-navy': '#0A192F',
+                        'vaf-steel-blue': '#1E293B',
+                        'vaf-light-blue': '#F0F7FF',
+                        'vaf-ice': '#F8FAFC',
+                        'vaf-electric': '#2563EB',
+                        'vaf-electric-hover': '#1D4ED8',
+                        'vaf-text-dark': '#0F172A',
+                        'vaf-text-gray': '#475569',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="vaf-styles.css">
+</head>
+<body class="bg-vaf-ice text-vaf-text-dark font-sans overflow-x-hidden antialiased select-none">
+
+    <!-- HEADER / NAVBAR CORPORATIVO -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group relative z-50">
+                <span class="font-serif text-3xl font-bold text-vaf-electric tracking-wide">VAF</span>
+                <span class="font-sans text-xs tracking-[0.2em] uppercase text-vaf-text-dark font-medium group-hover:text-vaf-electric transition-colors duration-300">Business Solution</span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="sobre.html" class="font-sans text-sm tracking-wide text-vaf-electric hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+                <a href="brokerage.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+                <a href="commodities.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities</a>
+                <a href="hubs.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-2 text-xs font-semibold text-vaf-text-gray">
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang active" id="btn-lang-pt">PT</button>
+                    <span>|</span>
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang" id="btn-lang-en">EN</button>
+                </div>
+                
+                <a href="contato.html" class="font-sans text-sm font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-5 py-2.5 rounded-lg transition-all duration-300">
+                    Private Desk
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="lg:hidden text-vaf-text-dark focus:outline-none p-2 relative z-50 hover:text-vaf-electric transition-colors duration-300">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white/98 backdrop-blur-lg z-40 flex flex-col justify-center items-center gap-8 px-6 text-center">
+            <a href="sobre.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+            <a href="brokerage.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+            <a href="commodities.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities Premium</a>
+            <a href="hubs.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            <hr class="w-1/3 border-slate-200 my-2">
+            <a href="contato.html" class="mobile-nav-link font-sans text-base font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-6 py-3 rounded-lg transition-all duration-300">
+                Acessar Private Desk
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pt-28">
+        
+        <!-- SEÇÃO 1: HERO DA PÁGINA (Fundo Claro Gelo) -->
+        <section class="relative bg-vaf-ice py-20 text-center z-10 reveal">
+            <span class="inline-flex items-center gap-2 font-sans text-xs tracking-[0.25em] uppercase text-vaf-electric font-semibold mb-6 border border-blue-500/20 px-4 py-2 rounded-full bg-blue-50">
+                Quem Somos
+            </span>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-slate-900 leading-tight mb-6">
+                Tradição, Visão e <span class="italic font-bold text-vaf-electric">Autoridade</span>
+            </h1>
+            <p class="text-base md:text-lg text-vaf-text-gray font-light max-w-2xl mx-auto">
+                São 26 anos construindo solidez jurídica e conexões comerciais indestrutíveis no mercado de internacionalização e trading.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: CARTA DA FUNDADORA (Fundo Médio Slate-Blue com Imagem) -->
+        <section class="bg-vaf-steel-blue text-white py-24 z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    
+                    <!-- Imagem Retrato -->
+                    <div class="relative w-full h-[400px] lg:h-[500px] rounded-2xl overflow-hidden bg-vaf-dark-navy border border-slate-700 flex items-center justify-center group shadow-xl">
+                        <img src="assets/asset_lilian_portrait.png" alt="Lílian Janaína" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="flex flex-col">
+                        <h2 class="font-serif text-3xl md:text-4xl text-white mb-6 leading-snug">
+                            "Os grandes negócios nascem da segurança mútua e florescem com a proximidade."
+                        </h2>
+                        
+                        <div class="space-y-6 text-slate-300 font-light leading-relaxed text-sm md:text-base mb-10">
+                            <p>
+                                Nossa trajetória iniciou há mais de duas décadas, fundamentada em bases sólidas do direito e na assessoria minuciosa de contratos complexos. Compreendemos muito cedo que a burocracia nunca deveria ser uma barreira, mas sim uma ferramenta invisível para blindar transações de alta performance.
+                            </p>
+                            <p>
+                                A VAF Business Solution é a evolução desse ecossistema. Não operamos em massa. Somos uma boutique dedicada. Trabalhamos lado a lado com nossos clientes, orquestrando do zero cada detalhe da jornada de exportação ou da aquisição de uma empresa (M&A).
+                            </p>
+                            <p>
+                                Chamamos nossa abordagem de <strong class="text-blue-400 font-medium">"The Lilian Touch"</strong>: a combinação cirúrgica da precisão jurídica com o calor e a hospitalidade receptiva, conectando a excelência da produção do interior de Minas Gerais e do Brasil às capitais do capital global na Europa e Oriente Médio.
+                            </p>
+                        </div>
+
+                        <div class="flex items-center gap-4 pt-6 border-t border-slate-700">
+                            <div class="flex flex-col">
+                                <span class="font-serif text-xl font-semibold text-white">Lílian Janaína da Silva</span>
+                                <span class="text-xs tracking-wider uppercase text-blue-400 font-medium">Fundadora & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: OS 3 PILARES (Fundo Claro de Contraste) -->
+        <section class="py-24 bg-vaf-light-blue text-vaf-text-dark relative z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-12">
+                    <span class="font-sans text-xs tracking-[0.25em] uppercase text-vaf-electric font-semibold mb-3 block">Valores Fundacionais</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-light text-slate-900">A Arquitetura da VAF</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pilar 1 -->
+                    <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-500/40 transition-all duration-300 flex flex-col items-center text-center group shadow-sm">
+                        <span class="font-serif text-5xl font-light text-blue-600/30 mb-6 group-hover:text-vaf-electric transition-colors duration-300">01</span>
+                        <h4 class="font-sans text-lg font-semibold text-slate-900 mb-3">Visão Expansiva & Global</h4>
+                        <p class="text-sm text-vaf-text-gray font-light">Pontes robustas conectando commodities, fazendas e ativos aos maiores polos econômicos (Dubai, Portugal e Emirados Árabes).</p>
+                    </div>
+                    <!-- Pilar 2 -->
+                    <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-500/40 transition-all duration-300 flex flex-col items-center text-center group shadow-sm mt-0 md:mt-8">
+                        <span class="font-serif text-5xl font-light text-blue-600/30 mb-6 group-hover:text-vaf-electric transition-colors duration-300">02</span>
+                        <h4 class="font-sans text-lg font-semibold text-slate-900 mb-3">Hospitalidade Receptiva</h4>
+                        <p class="text-sm text-vaf-text-gray font-light">O atendimento humano no centro do negócio. Relacionamentos transparentes, escuta ativa e dedicação contínua ao projeto do cliente.</p>
+                    </div>
+                    <!-- Pilar 3 -->
+                    <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-500/40 transition-all duration-300 flex flex-col items-center text-center group shadow-sm">
+                        <span class="font-serif text-5xl font-light text-blue-600/30 mb-6 group-hover:text-vaf-electric transition-colors duration-300">03</span>
+                        <h4 class="font-sans text-lg font-semibold text-slate-900 mb-3">Inteligência Ágil</h4>
+                        <p class="text-sm text-vaf-text-gray font-light">Estruturação de processos blindados contra riscos e atritos tributários, acelerando a aprovação de due diligence e contratos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer class="bg-vaf-dark-navy text-slate-400 py-16 border-t border-slate-800 font-light">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
+            
+            <div class="lg:col-span-5 flex flex-col items-start gap-4">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="font-serif text-3xl font-bold text-white tracking-wide">VAF</span>
+                    <span class="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 font-medium">Business Solution</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                    Assessoria privada de internacionalização, trading de commodities agrícolas selecionadas e intermediação de ativos (M&A) sob rigor absoluto de conformidade.
+                </p>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Navegação</h4>
+                <a href="sobre.html" class="hover:text-vaf-electric transition-colors duration-200">Sobre a VAF</a>
+                <a href="brokerage.html" class="hover:text-vaf-electric transition-colors duration-200">M&A Brokerage</a>
+                <a href="commodities.html" class="hover:text-vaf-electric transition-colors duration-200">Commodities Premium</a>
+                <a href="hubs.html" class="hover:text-vaf-electric transition-colors duration-200">Hubs Globais</a>
+                <a href="contato.html" class="hover:text-vaf-electric transition-colors duration-200">Private Desk</a>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Contato Corporativo</h4>
+                <p>contato@vafglobal.com</p>
+                <p class="leading-relaxed">
+                    Rua Zico Soares, 40 - Sala 02<br>
+                    Poços de Caldas - MG, CEP 37701-115<br>
+                    Brasil
+                </p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto border-slate-800 my-10 px-6 md:px-12">
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <span>&copy; 2026 VAF Business Solution. Todos os direitos reservados.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors duration-200">Termos de Uso</a>
+                <a href="#" class="hover:text-white transition-colors duration-200">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vaf-script.js"></script>
+</body>
+</html>

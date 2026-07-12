@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubs Globais da VAF Business Solution. Nossas bases operacionais em Poços de Caldas (BR), Vila Nova de Gaia (Portugal) e Dubai (UAE).">
+    
+    <title>Hubs Globais | VAF Business Solution (Opção 4)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vaf-dark-navy': '#0A192F',
+                        'vaf-steel-blue': '#1E293B',
+                        'vaf-light-blue': '#F0F7FF',
+                        'vaf-ice': '#F8FAFC',
+                        'vaf-electric': '#2563EB',
+                        'vaf-electric-hover': '#1D4ED8',
+                        'vaf-text-dark': '#0F172A',
+                        'vaf-text-gray': '#475569',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="vaf-styles.css">
+</head>
+<body class="bg-vaf-ice text-vaf-text-dark font-sans overflow-x-hidden antialiased select-none">
+
+    <!-- HEADER -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group relative z-50">
+                <span class="font-serif text-3xl font-bold text-vaf-electric tracking-wide">VAF</span>
+                <span class="font-sans text-xs tracking-[0.2em] uppercase text-vaf-text-dark font-medium group-hover:text-vaf-electric transition-colors duration-300">Business Solution</span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="sobre.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+                <a href="brokerage.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+                <a href="commodities.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities</a>
+                <a href="hubs.html" class="font-sans text-sm tracking-wide text-vaf-electric hover:text-vaf-electric-light transition-colors duration-300 font-medium">Hubs Globais</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-2 text-xs font-semibold text-vaf-text-gray">
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang active">PT</button>
+                    <span>|</span>
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang">EN</button>
+                </div>
+                <a href="contato.html" class="font-sans text-sm font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-5 py-2.5 rounded-lg transition-all duration-300">
+                    Private Desk
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="lg:hidden text-vaf-text-dark focus:outline-none p-2 relative z-50 hover:text-vaf-electric transition-colors duration-300">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white/98 backdrop-blur-lg z-40 flex flex-col justify-center items-center gap-8 px-6 text-center">
+            <a href="sobre.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+            <a href="brokerage.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+            <a href="commodities.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities Premium</a>
+            <a href="hubs.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            <hr class="w-1/3 border-slate-200 my-2">
+            <a href="contato.html" class="mobile-nav-link font-sans text-base font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-6 py-3 rounded-lg transition-all duration-300">
+                Acessar Private Desk
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-28">
+
+        <!-- SEÇÃO 1: HERO (Fundo Claro Gelo) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-20 relative z-10 text-center reveal">
+            <span class="inline-flex items-center gap-2 font-sans text-xs tracking-[0.25em] uppercase text-vaf-electric font-semibold mb-6 border border-blue-500/20 px-4 py-2 rounded-full bg-blue-50">
+                Presença Global
+            </span>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-slate-900 leading-tight mb-6">
+                Rede de <span class="italic font-bold text-vaf-electric">Hubs Estratégicos</span>
+            </h1>
+            <p class="text-base md:text-lg text-vaf-text-gray font-light max-w-2xl mx-auto leading-relaxed">
+                Mais do que escritórios, estabelecemos embaixadas comerciais nas rotas mais cruciais para as suas operações financeiras e logísticas.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: HUBS MULTITONS -->
+        <!-- Dubai (Fundo Branco) -->
+        <section class="bg-white py-20 text-vaf-text-dark z-10 reveal border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-xs text-vaf-electric tracking-widest uppercase font-bold mb-3 block">Private Desk & Wealth</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-slate-900 mb-4">Dubai (UAE)</h2>
+                        <p class="text-sm md:text-base text-vaf-text-gray font-light leading-relaxed max-w-md">
+                            O epicentro financeiro do Oriente Médio. Nosso hub em Dubai é focado no relacionamento com family offices, fundos soberanos e atração de recursos diretos do capital árabe para ativos brasileiros.
+                        </p>
+                    </div>
+                    <div class="w-full h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 group relative">
+                        <img src="assets/asset_hub_dubai.png" alt="Hub Dubai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portugal (Fundo Azul-Claro) -->
+        <section class="bg-vaf-light-blue py-20 text-vaf-text-dark z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="w-full h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-lg border border-blue-100 group relative order-2 md:order-1">
+                        <img src="assets/asset_hub_portugal.png" alt="Hub Portugal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="md:text-right flex flex-col md:items-end order-1 md:order-2">
+                        <span class="text-xs text-vaf-electric tracking-widest uppercase font-bold mb-3 block">Casa Brasiliana • WOW</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-slate-900 mb-4">Vila Nova de Gaia (PT)</h2>
+                        <p class="text-sm md:text-base text-vaf-text-gray font-light leading-relaxed max-w-md text-left md:text-right">
+                            Localizado no espetacular World of Wine (WOW), nossa "Casa Brasiliana" atua como showroom sensorial para nossos cafés especiais. É a principal porta de entrada aduaneira e cultural da Europa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brasil (Fundo Slate Escuro) -->
+        <section class="bg-vaf-steel-blue py-20 text-white z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-xs text-blue-400 tracking-widest uppercase font-bold mb-3 block">Base Sourcing & Jurídico</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-white mb-4">Poços de Caldas (BR)</h2>
+                        <p class="text-sm md:text-base text-slate-300 font-light leading-relaxed max-w-md">
+                            A base forte em Minas Gerais. Estrategicamente posicionada no coração da produção agrícola nacional, permite o contato direto com produtores, o mapeamento de terroir (vulcânico) e a estruturação jurídica imediata das exportações na origem.
+                        </p>
+                    </div>
+                    <div class="w-full h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-lg border border-slate-700 group relative">
+                        <img src="assets/asset_hub_brasil.png" alt="Hub Brasil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGÍSTICA INTEGRADA (Fundo Branco com Imagem IA) -->
+        <section class="bg-white py-24 text-vaf-text-dark z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="glass-light rounded-3xl border border-slate-200/80 overflow-hidden group">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                        <div class="p-8 md:p-12 lg:col-span-7">
+                            <span class="text-xs text-vaf-electric tracking-widest uppercase font-bold mb-3 block">Eficiência e Segurança</span>
+                            <h2 class="font-serif text-3xl text-slate-900 mb-4">Logística Global Integrada</h2>
+                            <p class="text-sm text-vaf-text-gray font-light leading-relaxed mb-6">
+                                Nossa mesa de parcerias e conexões marítimas e aéreas garante a movimentação segura das cargas nos principais portos mundiais (Roterdã, Antuérpia, Porto de Santos e Jebel Ali). Cuidamos da documentação, desembaraço e monitoramento contínuo.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-5 h-[300px] overflow-hidden relative">
+                            <img src="assets/asset_shipping_global.png" alt="Logística Global" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer class="bg-vaf-dark-navy text-slate-400 py-16 border-t border-slate-800 font-light">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
+            
+            <div class="lg:col-span-5 flex flex-col items-start gap-4">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="font-serif text-3xl font-bold text-white tracking-wide">VAF</span>
+                    <span class="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 font-medium">Business Solution</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                    Assessoria privada de internacionalização, trading de commodities agrícolas selecionadas e intermediação de ativos (M&A) sob rigor absoluto de conformidade.
+                </p>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Navegação</h4>
+                <a href="sobre.html" class="hover:text-vaf-electric transition-colors duration-200">Sobre a VAF</a>
+                <a href="brokerage.html" class="hover:text-vaf-electric transition-colors duration-200">M&A Brokerage</a>
+                <a href="commodities.html" class="hover:text-vaf-electric transition-colors duration-200">Commodities Premium</a>
+                <a href="hubs.html" class="hover:text-vaf-electric transition-colors duration-200">Hubs Globais</a>
+                <a href="contato.html" class="hover:text-vaf-electric transition-colors duration-200">Private Desk</a>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Contato Corporativo</h4>
+                <p>contato@vafglobal.com</p>
+                <p class="leading-relaxed">
+                    Rua Zico Soares, 40 - Sala 02<br>
+                    Poços de Caldas - MG, CEP 37701-115<br>
+                    Brasil
+                </p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto border-slate-800 my-10 px-6 md:px-12">
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <span>&copy; 2026 VAF Business Solution. Todos os direitos reservados.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors duration-200">Termos de Uso</a>
+                <a href="#" class="hover:text-white transition-colors duration-200">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vaf-script.js"></script>
+</body>
+</html>

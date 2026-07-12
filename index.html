@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VAF Business Solution. Conectando negócios no mundo, da América ao Oriente Médio e Europa. Internacionalize sua empresa.">
+    
+    <title>VAF Business Solution | Opção 4 (Atlantic Style)</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vaf-dark-navy': '#0A192F',
+                        'vaf-steel-blue': '#1E293B',
+                        'vaf-light-blue': '#F0F7FF',
+                        'vaf-ice': '#F8FAFC',
+                        'vaf-electric': '#2563EB',
+                        'vaf-electric-hover': '#1D4ED8',
+                        'vaf-text-dark': '#0F172A',
+                        'vaf-text-gray': '#475569',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="vaf-styles.css">
+</head>
+<body class="bg-vaf-ice text-vaf-text-dark font-sans overflow-x-hidden antialiased select-none">
+
+    <!-- HEADER / NAVBAR CORPORATIVO -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 group relative z-50">
+                <span class="font-serif text-3xl font-bold text-vaf-electric tracking-wide">VAF</span>
+                <span class="font-sans text-xs tracking-[0.2em] uppercase text-vaf-text-dark font-medium group-hover:text-vaf-electric transition-colors duration-300">Business Solution</span>
+            </a>
+            
+            <!-- Desktop Links -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="sobre.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+                <a href="brokerage.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+                <a href="commodities.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities</a>
+                <a href="hubs.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            </nav>
+            
+            <!-- Desktop CTA & Lang -->
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-2 text-xs font-semibold text-vaf-text-gray">
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang active" id="btn-lang-pt">PT</button>
+                    <span>|</span>
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang" id="btn-lang-en">EN</button>
+                </div>
+                
+                <a href="contato.html" class="font-sans text-sm font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-5 py-2.5 rounded-lg transition-all duration-300 shadow-md">
+                    Private Desk
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-vaf-text-dark focus:outline-none p-2 relative z-50 hover:text-vaf-electric transition-colors duration-300">
+                <svg id="hamburger-icon" class="w-6 h-6 transition-all duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="close-icon" class="w-6 h-6 hidden transition-all duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white/98 backdrop-blur-lg z-40 flex flex-col justify-center items-center gap-8 px-6 text-center">
+            <a href="sobre.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+            <a href="brokerage.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+            <a href="commodities.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Commodities Premium</a>
+            <a href="hubs.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            <hr class="w-1/3 border-slate-200 my-2">
+            <a href="contato.html" class="mobile-nav-link font-sans text-base font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-6 py-3 rounded-lg transition-all duration-300">
+                Acessar Private Desk
+            </a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 1: HERO (Fundo Escuro com Imagem Real) -->
+    <section id="hero" class="bg-vaf-dark-navy text-white pt-36 pb-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-vaf-dark-navy via-vaf-dark-navy/90 to-transparent z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Conteúdo de Texto -->
+                <div class="lg:col-span-7 flex flex-col items-start reveal">
+                    <span class="inline-flex items-center gap-2 font-sans text-xs tracking-[0.25em] uppercase text-vaf-electric font-semibold mb-6 border border-vaf-electric/30 px-4 py-2 rounded-full bg-vaf-dark-navy/55">
+                        Conectamos Seu Negócio ao Mundo
+                    </span>
+                    <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-white leading-tight mb-6">
+                        Levamos sua empresa para os <span class="italic font-bold text-blue-300">maiores polos</span> do capital global.
+                    </h1>
+                    <p class="text-base md:text-lg text-slate-300 font-light max-w-xl leading-relaxed mb-10">
+                        Do Brasil a Portugal, Dubai e Oriente Médio. A VAF Business Solution estrutura a internacionalização jurídica e a mesa de commodities da sua empresa de maneira ágil, segura e de alto padrão.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <a href="contato.html" class="inline-flex items-center justify-center font-sans text-sm font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-blue-600/20 active:scale-95">
+                            Iniciar Internacionalização
+                        </a>
+                        <a href="sobre.html" class="inline-flex items-center justify-center font-sans text-sm font-semibold text-slate-300 border border-slate-600 hover:border-white px-8 py-4 rounded-lg bg-transparent transition-all duration-300 active:scale-95">
+                            Nossa Trajetória
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lado Direito: Imagem Corporativa Gerada por IA -->
+                <div class="lg:col-span-5 reveal relative h-[350px] lg:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                    <img src="assets/asset_lilian_office.png" alt="VAF Executive Office" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: ROTAS BILATERAIS (Fundo Claro com Contraste) -->
+    <section id="routes-widget" class="py-24 bg-vaf-light-blue relative z-10 text-vaf-text-dark border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 reveal">
+                <span class="text-xs tracking-[0.2em] uppercase text-vaf-electric font-semibold block mb-3">Fluxos logísticos e aduaneiros</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-light text-slate-900">Seletor de Rotas Bilaterais</h2>
+                <p class="text-sm text-vaf-text-gray max-w-xl mx-auto mt-4 font-light">
+                    Escolha uma das rotas comerciais gerenciadas diretamente pela mesa de trading da VAF para visualizar os prazos e volumes operados.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Lista de Rotas -->
+                <div class="lg:col-span-4 space-y-4 reveal">
+                    <div class="route-card p-5 rounded-xl border border-blue-600 bg-blue-50/50 cursor-pointer hover:border-blue-500 transition-all duration-300 shadow-sm" data-route="br-dxb">
+                        <h4 class="font-sans text-sm font-semibold text-slate-900 mb-1">Brasil ➔ Dubai (UAE)</h4>
+                        <p class="text-xs text-vaf-text-gray font-light">Trading de açúcar refinado e acesso a investidores árabes.</p>
+                    </div>
+                    <div class="route-card p-5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-blue-500 transition-all duration-300 shadow-sm" data-route="br-pt">
+                        <h4 class="font-sans text-sm font-semibold text-slate-900 mb-1">Brasil ➔ Portugal (UE)</h4>
+                        <p class="text-xs text-vaf-text-gray font-light">Cafés especiais de terroir e estruturação jurídica europeia.</p>
+                    </div>
+                    <div class="route-card p-5 rounded-xl border border-slate-200 bg-white cursor-pointer hover:border-blue-500 transition-all duration-300 shadow-sm" data-route="dxb-eu">
+                        <h4 class="font-sans text-sm font-semibold text-slate-900 mb-1">Dubai ➔ Europa</h4>
+                        <p class="text-xs text-vaf-text-gray font-light">Trading químico e trading financeiro internacional.</p>
+                    </div>
+                </div>
+
+                <!-- Detalhes do Widget -->
+                <div class="lg:col-span-8 reveal">
+                    <div id="route-display-panel" class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-lg relative transition-all duration-300 min-h-[300px] flex flex-col justify-between">
+                        <div>
+                            <h3 id="route-active-title" class="font-serif text-2xl text-slate-900 mb-6 border-b border-slate-100 pb-4">
+                                Brasil ➔ Dubai (Oriente Médio)
+                            </h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Termos de Entrega</span>
+                                    <span id="route-fob" class="font-sans text-sm text-slate-800 font-semibold">FOB / CIF / CFR</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Transit Time Médio</span>
+                                    <span id="route-transit" class="font-sans text-sm text-slate-800 font-semibold">22 a 26 Dias</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Volume Médio Anual</span>
+                                    <span id="route-volume" class="font-sans text-sm text-slate-800 font-semibold">150.000 Ton/Ano</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Produtos</span>
+                                    <span id="route-products" class="font-sans text-sm text-slate-800 font-semibold">Açúcar Icumsa 45, Café Verde</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-6">
+                            <span class="text-xs text-vaf-text-gray font-light">Todas as transações operam sob conformidade aduaneira rígida.</span>
+                            <a href="contato.html" class="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group transition-colors duration-200">
+                                Consultar Rota <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: VERTICAIS DO ECOSSISTEMA (Fundo Branco Puro com Imagens IA) -->
+    <section id="services" class="py-24 bg-white relative z-10 text-vaf-text-dark">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 reveal">
+                <span class="text-xs tracking-[0.2em] uppercase text-vaf-electric font-semibold block mb-3">Divisões de Alta Conformidade</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-light text-slate-900">Nossos Pilares Operacionais</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pilar 1: M&A Brokerage -->
+                <div class="bg-vaf-ice p-8 rounded-xl border border-slate-200/80 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between group reveal premium-shadow premium-shadow-hover">
+                    <div>
+                        <div class="w-full h-[180px] bg-slate-200 rounded-lg overflow-hidden mb-6">
+                            <img src="assets/asset_ma_network.png" alt="M&A Brokerage" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-2xl text-slate-900 mb-3">M&A Brokerage</h3>
+                        <p class="text-xs text-vaf-text-gray font-light leading-relaxed mb-6">
+                            Intermediação de ativos corporativos e rurais com blindagem de passivos e sigilo comercial irrestrito (NDAs severos).
+                        </p>
+                    </div>
+                    <a href="brokerage.html" class="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group/link">
+                        Acessar Mesa de Transações <svg class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Pilar 2: Commodities -->
+                <div class="bg-vaf-ice p-8 rounded-xl border border-slate-200/80 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between group reveal premium-shadow premium-shadow-hover">
+                    <div>
+                        <div class="w-full h-[180px] bg-slate-200 rounded-lg overflow-hidden mb-6">
+                            <img src="assets/asset_coffee_premium.png" alt="Commodities" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-2xl text-slate-900 mb-3">Commodities</h3>
+                        <p class="text-xs text-vaf-text-gray font-light leading-relaxed mb-6">
+                            Boutique de exportação de Açúcar Icumsa e Cafés Especiais com terroir vulcânico e padrão internacional de qualidade certificada.
+                        </p>
+                    </div>
+                    <a href="commodities.html" class="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group/link">
+                        Acessar Boutique <svg class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Pilar 3: Hubs -->
+                <div class="bg-vaf-ice p-8 rounded-xl border border-slate-200/80 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between group reveal premium-shadow premium-shadow-hover">
+                    <div>
+                        <div class="w-full h-[180px] bg-slate-200 rounded-lg overflow-hidden mb-6">
+                            <img src="assets/asset_shipping_global.png" alt="Hubs Globais" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-2xl text-slate-900 mb-3">Hubs Globais</h3>
+                        <p class="text-xs text-vaf-text-gray font-light leading-relaxed mb-6">
+                            Bases de negócios estrategicamente localizadas em Dubai, Portugal e no polo produtivo nacional do Brasil.
+                        </p>
+                    </div>
+                    <a href="hubs.html" class="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group/link">
+                        Ver Presença Global <svg class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: DASHBOARD (Fundo Médio Cinza-Escuro Slate) -->
+    <section id="dashboard" class="py-24 bg-vaf-steel-blue text-white relative z-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="reveal">
+                    <span class="text-xs uppercase tracking-[0.2em] text-blue-400 font-bold block mb-3">Solidez em Números</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-white mb-6">Performance de Mercado Consolidade</h2>
+                    <p class="text-sm text-slate-300 font-light leading-relaxed max-w-md">
+                        Nossos números representam a dedicação diária de um ecossistema boutique dedicado à segurança e ao crescimento de nossos clientes.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="bg-vaf-dark-navy/60 p-6 rounded-xl border border-slate-700">
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest block mb-1">Trajetória</span>
+                            <span class="font-serif text-3xl md:text-4xl font-bold text-white dynamic-counter" data-target="26" data-suffix=" Anos">0 Anos</span>
+                        </div>
+                        <div class="bg-vaf-dark-navy/60 p-6 rounded-xl border border-slate-700">
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest block mb-1">Volume de Negócios</span>
+                            <span class="font-serif text-3xl md:text-4xl font-bold text-white dynamic-counter" data-target="1200000" data-suffix="+">0</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: CALL TO ACTION (CTA Azul Elétrico) -->
+    <section id="cta" class="py-20 bg-vaf-electric text-white relative z-10 text-center">
+        <div class="max-w-3xl mx-auto px-6 reveal">
+            <h2 class="font-serif text-3xl md:text-4xl font-light mb-6">Pronto para dar o próximo passo global?</h2>
+            <p class="text-sm text-blue-100 font-light mb-10">
+                Fale com nossos especialistas na mesa de internacionalização ou trading. Garantimos resposta segura em até 24 horas sob protocolo de confidencialidade.
+            </p>
+            <a href="contato.html" class="inline-flex items-center justify-center font-sans text-sm font-semibold text-vaf-text-dark bg-white hover:bg-slate-100 px-8 py-4 rounded-lg transition-all duration-300 shadow-lg">
+                Falar com Consultor Sênior
+            </a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ INSTITUCIONAL (Fundo Azul-Escuro Profundo) -->
+    <footer class="bg-vaf-dark-navy text-slate-400 py-16 border-t border-slate-800 font-light relative z-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
+            
+            <div class="lg:col-span-5 flex flex-col items-start gap-4">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="font-serif text-3xl font-bold text-white tracking-wide">VAF</span>
+                    <span class="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 font-medium">Business Solution</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                    Assessoria privada de internacionalização, trading de commodities agrícolas selecionadas e intermediação de ativos (M&A) sob rigor absoluto de conformidade.
+                </p>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Navegação</h4>
+                <a href="sobre.html" class="hover:text-vaf-electric transition-colors duration-200">Sobre a VAF</a>
+                <a href="brokerage.html" class="hover:text-vaf-electric transition-colors duration-200">M&A Brokerage</a>
+                <a href="commodities.html" class="hover:text-vaf-electric transition-colors duration-200">Commodities Premium</a>
+                <a href="hubs.html" class="hover:text-vaf-electric transition-colors duration-200">Hubs Globais</a>
+                <a href="contato.html" class="hover:text-vaf-electric transition-colors duration-200">Private Desk</a>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Contato Corporativo</h4>
+                <p>contato@vafglobal.com</p>
+                <p class="leading-relaxed">
+                    Rua Zico Soares, 40 - Sala 02<br>
+                    Poços de Caldas - MG, CEP 37701-115<br>
+                    Brasil
+                </p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto border-slate-800 my-10 px-6 md:px-12">
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <span>&copy; 2026 VAF Business Solution. Todos os direitos reservados.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors duration-200">Termos de Uso</a>
+                <a href="#" class="hover:text-white transition-colors duration-200">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script Link -->
+    <script src="vaf-script.js"></script>
+</body>
+</html>

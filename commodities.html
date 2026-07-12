@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutique de Commodities VAF. Exportação e trading de açúcar premium (Icumsa 45, VHP) e café especial certificado de origem (Minas Gerais).">
+    
+    <title>Boutique de Commodities | VAF Business Solution (Opção 4)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vaf-dark-navy': '#0A192F',
+                        'vaf-steel-blue': '#1E293B',
+                        'vaf-light-blue': '#F0F7FF',
+                        'vaf-ice': '#F8FAFC',
+                        'vaf-electric': '#2563EB',
+                        'vaf-electric-hover': '#1D4ED8',
+                        'vaf-text-dark': '#0F172A',
+                        'vaf-text-gray': '#475569',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="vaf-styles.css">
+</head>
+<body class="bg-vaf-ice text-vaf-text-dark font-sans overflow-x-hidden antialiased select-none">
+
+    <!-- HEADER -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group relative z-50">
+                <span class="font-serif text-3xl font-bold text-vaf-electric tracking-wide">VAF</span>
+                <span class="font-sans text-xs tracking-[0.2em] uppercase text-vaf-text-dark font-medium group-hover:text-vaf-electric transition-colors duration-300">Business Solution</span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="sobre.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+                <a href="brokerage.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+                <a href="commodities.html" class="font-sans text-sm tracking-wide text-vaf-electric hover:text-vaf-electric-light transition-colors duration-300 font-medium">Commodities</a>
+                <a href="hubs.html" class="font-sans text-sm tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            </nav>
+            
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-2 text-xs font-semibold text-vaf-text-gray">
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang active">PT</button>
+                    <span>|</span>
+                    <button class="hover:text-vaf-electric transition-colors duration-300 btn-lang">EN</button>
+                </div>
+                <a href="contato.html" class="font-sans text-sm font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-5 py-2.5 rounded-lg transition-all duration-300">
+                    Private Desk
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="lg:hidden text-vaf-text-dark focus:outline-none p-2 relative z-50 hover:text-vaf-electric transition-colors duration-300">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white/98 backdrop-blur-lg z-40 flex flex-col justify-center items-center gap-8 px-6 text-center">
+            <a href="sobre.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Sobre</a>
+            <a href="brokerage.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">M&A Brokerage</a>
+            <a href="commodities.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-electric transition-colors duration-300 font-medium">Commodities Premium</a>
+            <a href="hubs.html" class="mobile-nav-link font-sans text-xl tracking-wide text-vaf-text-gray hover:text-vaf-electric transition-colors duration-300 font-medium">Hubs Globais</a>
+            <hr class="w-1/3 border-slate-200 my-2">
+            <a href="contato.html" class="mobile-nav-link font-sans text-base font-semibold text-white bg-vaf-electric hover:bg-vaf-electric-hover px-6 py-3 rounded-lg transition-all duration-300">
+                Acessar Private Desk
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-28">
+
+        <!-- SEÇÃO 1: HERO (Fundo Claro Gelo) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-20 relative z-10 text-center reveal">
+            <span class="inline-flex items-center gap-2 font-sans text-xs tracking-[0.25em] uppercase text-vaf-electric font-semibold mb-6 border border-blue-500/20 px-4 py-2 rounded-full bg-blue-50">
+                Trading & Exportação
+            </span>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-slate-900 leading-tight mb-6">
+                Boutique de <span class="italic font-bold text-vaf-electric">Commodities</span>
+            </h1>
+            <p class="text-base md:text-lg text-vaf-text-gray font-light max-w-2xl mx-auto leading-relaxed">
+                Operamos com contratos diretos de origem controlada. Foco absoluto no fornecimento contínuo de açúcar premium e safras limitadas de café especial para os mercados da Ásia, Europa e Oriente Médio.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: AÇÚCAR (Fundo Branco Puro) -->
+        <section class="bg-white py-24 text-vaf-text-dark z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="glass-light rounded-3xl border border-slate-200/80 overflow-hidden animate-float">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        
+                        <!-- Bloco Texto / Info -->
+                        <div class="p-10 md:p-14 border-b lg:border-b-0 lg:border-r border-slate-200/60 flex flex-col justify-center">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-12 h-12 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </span>
+                                <span class="text-xs tracking-[0.2em] uppercase text-vaf-electric font-bold">Escala Global</span>
+                            </div>
+                            <h2 class="font-serif text-3xl md:text-4xl text-slate-900 mb-4">Açúcar Certificado</h2>
+                            <p class="text-sm md:text-base text-vaf-text-gray font-light leading-relaxed mb-8">
+                                Volume e qualidade andam juntos. Representamos grandes usinas cooperadas no Brasil, entregando açúcar de alta polarização com rigorosos laudos SGS, em modalidades Spot ou Contrato (FOB/CIF).
+                            </p>
+                            <div class="flex flex-col gap-3 text-sm">
+                                <div class="flex items-center gap-3 text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-200 hover:border-blue-500/30 transition-colors">
+                                    <span class="text-blue-600">•</span> <span class="font-medium">ICUMSA 45:</span> Refinado branco de alto padrão para consumo humano direto.
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-800 bg-slate-50 p-3 rounded-lg border border-slate-200 hover:border-blue-500/30 transition-colors">
+                                    <span class="text-blue-600">•</span> <span class="font-medium">VHP / VVHP:</span> Açúcar bruto com Very High Polarization (base de exportação mundial).
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bloco Imagem Abstrata/Dashboard -->
+                        <div class="bg-slate-100 relative p-10 flex items-center justify-center min-h-[400px] overflow-hidden group">
+                            <img src="assets/asset_sugar_trading.png" alt="Açúcar Certificado" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-slate-900/10 z-0"></div>
+                            <div class="relative z-10 w-full max-w-sm bg-white/95 backdrop-blur-sm p-8 rounded-xl border border-slate-200/80 shadow-2xl">
+                                <span class="text-[10px] uppercase tracking-widest text-emerald-600 font-bold flex items-center gap-2 mb-4">
+                                    <span class="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-ping"></span> Laudo SGS Aprovado
+                                </span>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-end border-b border-slate-100 pb-2">
+                                        <span class="text-xs text-vaf-text-gray uppercase tracking-wider">Polarização (Min)</span>
+                                        <span class="font-serif text-xl text-slate-800">99.80%</span>
+                                    </div>
+                                    <div class="flex justify-between items-end border-b border-slate-100 pb-2">
+                                        <span class="text-xs text-vaf-text-gray uppercase tracking-wider">Umidade (Max)</span>
+                                        <span class="font-serif text-xl text-slate-800">0.04%</span>
+                                    </div>
+                                    <div class="flex justify-between items-end pb-2">
+                                        <span class="text-xs text-vaf-text-gray uppercase tracking-wider">Cor Icumsa</span>
+                                        <span class="font-serif text-xl text-slate-800">45 RBU</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: CAFÉ ESPECIAL (Fundo Claro Light Blue) -->
+        <section class="bg-vaf-light-blue py-24 text-vaf-text-dark z-10 reveal">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="glass-light rounded-3xl border border-slate-200/80 overflow-hidden bg-white shadow-xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        
+                        <!-- Imagem do Café Gerada por IA -->
+                        <div class="bg-white relative p-10 flex items-center justify-center min-h-[400px] border-b lg:border-b-0 lg:border-r border-slate-200/60 overflow-hidden group">
+                            <img src="assets/asset_coffee_premium.png" alt="Café Especial Premium" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        </div>
+
+                        <!-- Bloco Texto / Info -->
+                        <div class="p-10 md:p-14 flex flex-col justify-center">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="text-xs tracking-[0.2em] uppercase text-vaf-electric font-bold">Reserva Exclusiva</span>
+                            </div>
+                            <h2 class="font-serif text-3xl md:text-4xl text-slate-900 mb-4">Café Especial Certificado</h2>
+                            <p class="text-sm md:text-base text-vaf-text-gray font-light leading-relaxed mb-8">
+                                A verdadeira essência do Brasil na sua xícara. Trabalhamos exclusivamente com grãos pontuados (SCA 80+) provenientes de microlotes e cooperativas de agricultura regenerativa, entregando aroma e comércio justo (Fair Trade).
+                            </p>
+                            
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Qualidade na Taça</span>
+                                    <span class="font-serif text-lg text-slate-800">Bebida Estritamente Mole</span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                    <span class="text-[10px] text-vaf-text-gray uppercase tracking-widest block mb-1">Crivo Global</span>
+                                    <span class="font-serif text-lg text-slate-800">Padrão SCA 84+</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10">
+                                <a href="contato.html" class="inline-flex items-center gap-3 text-sm font-semibold text-vaf-electric hover:text-vaf-electric-hover transition-all duration-300">
+                                    Solicitar Lote de Amostra <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer class="bg-vaf-dark-navy text-slate-400 py-16 border-t border-slate-800 font-light">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
+            
+            <div class="lg:col-span-5 flex flex-col items-start gap-4">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="font-serif text-3xl font-bold text-white tracking-wide">VAF</span>
+                    <span class="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 font-medium">Business Solution</span>
+                </a>
+                <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                    Assessoria privada de internacionalização, trading de commodities agrícolas selecionadas e intermediação de ativos (M&A) sob rigor absoluto de conformidade.
+                </p>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Navegação</h4>
+                <a href="sobre.html" class="hover:text-vaf-electric transition-colors duration-200">Sobre a VAF</a>
+                <a href="brokerage.html" class="hover:text-vaf-electric transition-colors duration-200">M&A Brokerage</a>
+                <a href="commodities.html" class="text-vaf-electric transition-colors duration-200">Commodities Premium</a>
+                <a href="hubs.html" class="hover:text-vaf-electric transition-colors duration-200">Hubs Globais</a>
+                <a href="contato.html" class="hover:text-vaf-electric transition-colors duration-200">Private Desk</a>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3 text-sm">
+                <h4 class="font-sans text-xs font-semibold uppercase text-white tracking-widest mb-2">Contato Corporativo</h4>
+                <p>contato@vafglobal.com</p>
+                <p class="leading-relaxed">
+                    Rua Zico Soares, 40 - Sala 02<br>
+                    Poços de Caldas - MG, CEP 37701-115<br>
+                    Brasil
+                </p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto border-slate-800 my-10 px-6 md:px-12">
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <span>&copy; 2026 VAF Business Solution. Todos os direitos reservados.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors duration-200">Termos de Uso</a>
+                <a href="#" class="hover:text-white transition-colors duration-200">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vaf-script.js"></script>
+</body>
+</html>
